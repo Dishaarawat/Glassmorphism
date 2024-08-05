@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width:100vw;
+
+    }
+    section{
+        height: 100vh;
+        width:100vw;
+        background-image: linear-gradient(to right,blue,rgb(203, 41, 203),rgb(232, 56, 164));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .one{
+        position: absolute;
+        height:100px;
+        width:100px;
+        border-radius: 10px;
+        /* z-index:-1; */
+        left:550px;
+        top:100px;
+        background-color: rgba(255, 255, 255, 0.285);
+        backdrop-filter: blur(20px);
+    }
+    .five{
+        position: absolute;
+        height:100px;
+        width:100px;
+        border-radius: 10px;
+        z-index:1;
+        right:550px;
+        top:300px;
+        background-color: rgba(255, 255, 255, 0.285);
+        backdrop-filter: blur(20px);
+    }
+   
+    .two{
+        position: absolute;
+        height:100px;
+        width:100px;
+        border-radius: 10px;
+        z-index:1;
+        right:550px;
+         bottom:100px;
+        background-color: rgba(255, 255, 255, 0.285);
+        backdrop-filter: blur(20px);
+    }
+    .four{
+        position: absolute;
+        height:150px;
+        width:150px;
+        border-radius: 10px;
+        /* z-index:-1; */
+        right:500px;
+        top:50px;
+        background-color: rgba(255, 255, 255, 0.285);
+        backdrop-filter: blur(20px);
+    }
+   
+    .three{
+      position: relative;
+        height:450px;
+        width:350px;
+        background-color: rgba(255, 255, 255, 0.285);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        
+        z-index:1;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        
+    }
+    .box{
+        border-radius:30px;
+        height:50px;
+        width:250px;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.151);
+        backdrop-filter: blur(10px);
+    }
+    .button{
+        border-radius:30px;
+        padding:10px 5px;
+        height:50px;
+        width:150px;
+        background-color: rgba(255, 255, 255, 0.151);
+        backdrop-filter: blur(10px);
+
+    }
+    ::placeholder{
+      color:white;
+    }
+    .button{
+      color:white;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three">
+        <h1>Welcome</h1>
+        <form>
+          <input type="text" placeholder="Email" class="box"/>
+          <input type="text" placeholder="Password" class="box"/>
+
+          <input type="button" value="Sign in" class="button" />
+        </form>
+        <p>Forgot Password</p>
+      </div>
+      <div class="four"></div>
+      <div class="five"></div>
+    </section>
+  </body>
+</html>

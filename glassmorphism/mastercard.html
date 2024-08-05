@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "roboto", "sans-serif";
+        color:white;
+    }
+    body{
+       
+        background-color: black;
+    }
+    section{
+        height:100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .dot:nth-child(1){
+        position: absolute;
+        top:100px;
+        left:400px;
+        z-index: -1;
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+        background-image:linear-gradient(to right,blue,skyblue);
+    } 
+    .dot:nth-child(2){
+        position: absolute;
+        bottom:100px;
+        right:400px;
+        z-index: -1;
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+        background-image:linear-gradient(to left,purple,rgb(220, 18, 149)
+        );
+    }
+    .container{
+        height:270px;
+        width:450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap:10px;
+        padding:4px 30px;
+        background-color: rgba(255, 255, 255, 0.165);
+        border-radius: 35px;
+        backdrop-filter: blur(5px);
+    
+    }
+    .card-one{
+        display: flex;
+        align-items: center;
+        gap:85px;
+        /* justify-content: space-around;  */
+    }
+    
+    .one{
+        display: flex;
+        align-items: center;
+        gap:50px;
+    }
+    .one h2{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .circles{
+        background-color: red;
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        position:relative;
+    }
+    .circles:after{
+        content: '';
+        position: absolute;
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        background-color: orange;
+        opacity: .6;
+        left:30px;
+
+    }
+    .image{
+        background-color: orange;
+        height:50px;
+        width:70px;
+        border-radius: 10px;
+    }
+    .card-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-two h3{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .card-three{
+        display: flex;
+        gap: 200px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .name p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+</style>
+<body>
+    <section>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="container">
+            <div class="card-one">
+                <div class="one">
+                    <div class="circles"></div>
+                    <h2>Master Card</h2>
+                </div>
+                <div class="image"></div>
+            </div>
+
+            <div class="card-two">
+                <p>Card Number</p>
+                <h3>4152 2000 7542 3041</h3>
+            </div>
+            <div class="card-three">
+                <div class="name">
+                    <p>Disha Rawat</p>
+                </div>
+                <div class="footer">
+                    <h3>Valid thru</h3>
+                    <h1>08/27</h1>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </section>
+</body>
+</html>
